@@ -1,0 +1,344 @@
+{
+    "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+    "actorSpecification": 1,
+    "fields": {
+        "type": "object",
+        "properties": {
+            "inputUrl": {
+                "type": [
+                    "string"
+                ],
+                "description": "inputUrl of the Instagram post; null when unavailable."
+            },
+            "id": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "id of the Instagram post; null when unavailable."
+            },
+            "type": {
+                "type": [
+                    "string"
+                ],
+                "description": "type of the Instagram post; null when unavailable."
+            },
+            "shortCode": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "shortCode of the Instagram post; null when unavailable."
+            },
+            "caption": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "caption of the Instagram post; null when unavailable."
+            },
+            "hashtags": {
+                "type": "array",
+                "description": "hashtags of the Instagram post; null when unavailable.",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "mentions": {
+                "type": "array",
+                "description": "mentions of the Instagram post; null when unavailable.",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "url": {
+                "type": [
+                    "string"
+                ],
+                "description": "url of the Instagram post; null when unavailable."
+            },
+            "commentsCount": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "commentsCount of the Instagram post; null when unavailable."
+            },
+            "firstComment": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "firstComment of the Instagram post; null when unavailable."
+            },
+            "latestComments": {
+                "type": "array",
+                "description": "latestComments of the Instagram post; null when unavailable.",
+                "items": {
+                    "type": "object"
+                }
+            },
+            "dimensionsHeight": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "dimensionsHeight of the Instagram post; null when unavailable."
+            },
+            "dimensionsWidth": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "dimensionsWidth of the Instagram post; null when unavailable."
+            },
+            "displayUrl": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "displayUrl of the Instagram post; null when unavailable."
+            },
+            "images": {
+                "type": "array",
+                "description": "images of the Instagram post; null when unavailable.",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "likesCount": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "likesCount of the Instagram post; null when unavailable."
+            },
+            "videoPlayCount": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "videoPlayCount of the Instagram post; null when unavailable."
+            },
+            "fbLikeCount": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "fbLikeCount of the Instagram post; null when unavailable."
+            },
+            "fbPlayCount": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "fbPlayCount of the Instagram post; null when unavailable."
+            },
+            "timestamp": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "timestamp of the Instagram post; null when unavailable."
+            },
+            "childPosts": {
+                "type": "array",
+                "description": "childPosts of the Instagram post; null when unavailable.",
+                "items": {
+                    "type": "object"
+                }
+            },
+            "locationName": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "locationName of the Instagram post; null when unavailable."
+            },
+            "ownerFullName": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "ownerFullName of the Instagram post; null when unavailable."
+            },
+            "ownerUsername": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "ownerUsername of the Instagram post; null when unavailable."
+            },
+            "ownerId": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "ownerId of the Instagram post; null when unavailable."
+            },
+            "productType": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "productType of the Instagram post; null when unavailable."
+            },
+            "videoDuration": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "videoDuration of the Instagram post; null when unavailable."
+            },
+            "paidPartnership": {
+                "type": [
+                    "boolean",
+                    "null"
+                ],
+                "description": "paidPartnership of the Instagram post; null when unavailable."
+            },
+            "taggedUsers": {
+                "type": "array",
+                "description": "taggedUsers of the Instagram post; null when unavailable.",
+                "items": {
+                    "type": "object"
+                }
+            },
+            "isPinned": {
+                "type": [
+                    "boolean",
+                    "null"
+                ],
+                "description": "isPinned of the Instagram post; null when unavailable."
+            },
+            "musicInfo": {
+                "type": "object",
+                "description": "musicInfo of the Instagram post; null when unavailable.",
+                "properties": {
+                    "music_info": {
+                        "type": [
+                            "object",
+                            "null"
+                        ]
+                    },
+                    "original_sound_info": {
+                        "type": [
+                            "object",
+                            "null"
+                        ]
+                    }
+                }
+            },
+            "coauthorProducers": {
+                "type": "array",
+                "description": "coauthorProducers of the Instagram post; null when unavailable.",
+                "items": {
+                    "type": "object"
+                }
+            },
+            "sharesCount": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "sharesCount of the Instagram post; null when unavailable."
+            },
+            "originalHeight": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "originalHeight of the Instagram post; null when unavailable."
+            },
+            "originalWidth": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "originalWidth of the Instagram post; null when unavailable."
+            },
+            "alt": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "alt of the Instagram post; null when unavailable."
+            },
+            "videoViewCount": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "videoViewCount of the Instagram post; null when unavailable."
+            },
+            "locationId": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "locationId of the Instagram post; null when unavailable."
+            },
+            "isCommentsDisabled": {
+                "type": [
+                    "boolean",
+                    "null"
+                ],
+                "description": "isCommentsDisabled of the Instagram post; null when unavailable."
+            }
+        }
+    },
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "url",
+                    "ownerUsername",
+                    "likesCount",
+                    "commentsCount",
+                    "videoViewCount",
+                    "caption",
+                    "type",
+                    "timestamp"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "url": {
+                        "label": "Post URL",
+                        "format": "link"
+                    },
+                    "ownerUsername": {
+                        "label": "Author",
+                        "format": "text"
+                    },
+                    "likesCount": {
+                        "label": "Likes",
+                        "format": "number"
+                    },
+                    "commentsCount": {
+                        "label": "Comments",
+                        "format": "number"
+                    },
+                    "caption": {
+                        "label": "Caption",
+                        "format": "text"
+                    },
+                    "timestamp": {
+                        "label": "Published At",
+                        "format": "date"
+                    },
+                    "videoViewCount": {
+                        "label": "Views",
+                        "format": "number"
+                    },
+                    "type": {
+                        "label": "Type",
+                        "format": "text"
+                    }
+                }
+            }
+        }
+    }
+}

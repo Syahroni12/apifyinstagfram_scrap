@@ -1,0 +1,13 @@
+{
+  "actorKeyValueStoreSchemaVersion": 1,
+  "title": "Instagram Scraper Key-Value Store Schema",
+  "description": "Stores state and deduplication history between runs",
+  "collections": {
+    "seenPosts": {
+      "title": "Seen Post URLs",
+      "description": "List of Instagram post URLs that have already been scraped in previous runs.",
+      "key": "SEEN_POSTS",
+      "contentType": ["application/json"]
+    }
+  }
+}

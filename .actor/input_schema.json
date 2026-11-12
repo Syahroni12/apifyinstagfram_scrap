@@ -1,0 +1,95 @@
+{
+    "$schema": "https://apify.com/schemas/v1/input.ide.json",
+    "title": "Instagram Post & Details Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "sessionid": {
+            "title": "Instagram sessionid Cookie",
+            "type": "string",
+            "description": "The 'sessionid' cookie from your logged-in Instagram session in your browser. Used to authenticate requests and bypass Instagram login walls.",
+            "editor": "textfield",
+            "isSecret": true,
+            "prefill": "YOUR_SESSION_ID"
+        },
+        "cookies": {
+            "title": "Full Cookies String (Optional)",
+            "type": "string",
+            "description": "Optional full cookies header string from your browser (e.g. sessionid=...; ds_user_id=...; csrftoken=...).",
+            "editor": "textarea",
+            "isSecret": true,
+            "prefill": ""
+        },
+        "hashtag": {
+            "title": "Hashtag",
+            "type": "string",
+            "description": "Hashtag to scrape (e.g. 'jember' or '#photography').",
+            "editor": "textfield",
+            "prefill": "jember"
+        },
+        "keyword": {
+            "title": "Search Keyword",
+            "type": "string",
+            "description": "Keyword to search in Instagram explore search (e.g. 'wisata jember').",
+            "editor": "textfield",
+            "prefill": "wisata jember"
+        },
+        "maxPosts": {
+            "title": "Max Posts per Query",
+            "type": "integer",
+            "description": "Maximum number of post/reel links to collect for each hashtag or keyword (disarankan 5-10 agar run selesai < 1m 20d).",
+            "default": 10,
+            "prefill": 10,
+            "minimum": 1,
+            "maximum": 500
+        },
+        "scrollCount": {
+            "title": "Scroll Iterations",
+            "type": "integer",
+            "description": "Berapa kali scraper men-scroll halaman ke bawah untuk memuat postingan baru.",
+            "default": 5,
+            "prefill": 5,
+            "minimum": 1,
+            "maximum": 50
+        },
+        "scrapeDetails": {
+            "title": "Scrape Post Details (Likes, Comments, Views, Caption)",
+            "type": "boolean",
+            "description": "If enabled, visits each post to extract caption, likes, comments, views, author, and timestamp.",
+            "default": true
+        },
+        "skipSeenPosts": {
+            "title": "Skip Already Scraped Posts",
+            "type": "boolean",
+            "description": "If enabled, posts that were already scraped in previous runs will be skipped automatically to avoid duplicate data.",
+            "default": true
+        },
+        "repeatCount": {
+            "title": "Jumlah Siklus Run (Repeat Cycles)",
+            "type": "integer",
+            "description": "Berapa kali scraper mengulang siklus dalam satu kali run. Jika memakai Apify Scheduler, gunakan 1 (karena scheduler yang menjalankan berkala).",
+            "default": 1,
+            "prefill": 1,
+            "minimum": 1,
+            "maximum": 500
+        },
+        "delayBetweenRunsSec": {
+            "title": "Jeda Antar Siklus (Detik)",
+            "type": "integer",
+            "description": "Jeda waktu tunggu (detik) antara satu siklus selesai ke siklus berikutnya jika repeatCount > 1.",
+            "default": 20,
+            "prefill": 20,
+            "minimum": 10,
+            "maximum": 3600
+        },
+        "maxRunTimeSecs": {
+            "title": "Batas Maksimal Durasi Run (Detik)",
+            "type": "integer",
+            "description": "Batas waktu maksimal per run (default: 70 detik, maks: 75 detik) untuk menjamin run selalu selesai di bawah 1 menit 20 detik.",
+            "default": 70,
+            "prefill": 70,
+            "minimum": 30,
+            "maximum": 75
+        }
+    }
+}

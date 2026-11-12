@@ -1,0 +1,48 @@
+# This file tells Git which files shouldn't be added to source control
+
+.DS_Store
+.idea
+.vscode
+.zed
+dist
+node_modules
+apify_storage
+storage
+
+# Local secrets and credentials (commit templates only)
+.env
+.env.*
+!.env.example
+!.env.sample
+.apify/
+.aws/
+.npmrc
+INPUT.json
+INPUT.*.json
+!INPUT.example.json
+!INPUT.sample.json
+cookies.json
+cookies.txt
+cookies*.json
+cookies*.txt
+session*.json
+session*.txt
+*storage-state*.json
+*storageState*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Scraped data and diagnostic artifacts
+crawlee_storage/
+logs/
+*.log
+playwright-report/
+test-results/
+coverage/
+*.har
+*.trace
+
+# Added by Apify CLI
+.venv
