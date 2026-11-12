@@ -42,7 +42,8 @@ Contoh input JSON untuk menjalankan 80 siklus:
 
 ```json
 {
-  "sessionid": "43550386680%3Anvec2lwcaTEOxt...",
+  "sessionid": "masukkan session id
+",
   "hashtag": "jember",
   "keyword": "wisata jember",
   "maxPosts": 10,
